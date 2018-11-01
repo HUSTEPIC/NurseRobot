@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<settings>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <LMIFTDIDriver>
+        <LMI_ResetMode>0x00000000</LMI_ResetMode>
+    </LMIFTDIDriver>
+    <DebugChecksum>
+        <Checksum>-760845188</Checksum>
+    </DebugChecksum>
+    <LMIFTDI>
+        <LMIFTDIserialNo>LQ19IULCA</LMIFTDIserialNo>
+        <LMIFTDIfoundProbes />
+    </LMIFTDI>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
+    <Log_file>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </Log_file>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <Disassemble_mode>
+        <mode>0</mode>
+    </Disassemble_mode>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints>
+        <Count>0</Count>
+    </Breakpoints>
+    <Aliases>
+        <A0>_ "D:\GIT\a0132167_sdk_1.1.0\source-1p1-rahul\third_party\FreeRTOS\source\portable\IAR\ARM_CM4\portasm.s" ""</A0>
+        <A1>_ "D:\GIT\a0132167_sdk_1.1.0\source-1p1-rahul\third_party\FreeRTOS\source\tasks.c" ""</A1>
+        <Count>2</Count>
+        <SuppressDialog>1</SuppressDialog>
+    </Aliases>
+</settings>

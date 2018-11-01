@@ -1,0 +1,21 @@
+"--endian=little" 
+
+"--cpu=Cortex-M4" 
+
+"--fpu=None" 
+
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\CONFIG\debugger\TexasInstruments\CC3200.ddf" 
+
+"--semihosting=none" 
+
+"--device=CC3200" 
+
+"--drv_interface_speed=500" 
+
+"--drv_interface=SWD" 
+
+
+
+

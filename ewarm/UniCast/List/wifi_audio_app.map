@@ -1,0 +1,1083 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  01/Nov/2018  19:16:36
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Exe\wifi_audio_app.out
+#    Map file     =  
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\List\wifi_audio_app.map
+#    Command line =  
+#        -f C:\Users\ansel\AppData\Local\Temp\EW9F5C.tmp
+#        (C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\audiocodec.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\circ_buff.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\control.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\gpio_if.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\i2c_if.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\i2s_if.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\main.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\microphone.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\network.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\pcm_handler.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\pinmux.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\smartconfig.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\speaker.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\startup_ewarm.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\uart_if.o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj\udma_if.o
+#        --no_out_extension -o
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Exe\wifi_audio_app.out
+#        --config_def CC3200_ES_1_2_1=0 --map
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\List\wifi_audio_app.map
+#        --config
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\wifi_audio_app.icf
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm/../../../simplelink/ewarm/OS/Exe/simplelink.a
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm/../../../driverlib/ewarm/Release/Exe/driverlib.a
+#        C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm/../../../oslib/ewarm/free_rtos/Exe/free_rtos.a
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** MESSAGES
+***
+
+Warning[Lt009]: Inconsistent wchar_t size
+            utils.o(driverlib.a) and 17 other objects in driverlib.a and 7
+                      other libraries have wchar_t size 16 bits
+            audiocodec.o and 45 other objects, some of them in simplelink.a and
+                      25 other libraries have wchar_t size 32 bits
+
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at start of [from 0x2000'4000 to 0x2003'0000] {
+          ro section .intvec };
+"P1":  place in [from 0x2000'4000 to 0x2003'0000] { ro };
+define block HEAP with size = 96K, alignment = 8 { };
+"P2":  place in [from 0x2000'4000 to 0x2003'0000] { rw, block HEAP };
+do not initialize { section .noinit };
+initialize by copy { rw };
+
+  Section            Kind         Address     Size  Object
+  -------            ----         -------     ----  ------
+"A0":                                        0x400
+  .intvec            const    0x2000'4000    0x400  startup_ewarm.o [1]
+                            - 0x2000'4400    0x400
+
+"P1-P2", part 1 of 3:                       0xa760
+  .text              ro code  0x2000'4400   0x1d24  dlmalloc.o [2]
+  .text              ro code  0x2000'6124      0x6  abort.o [2]
+  .text              ro code  0x2000'612a     0x3a  zero_init3.o [6]
+  .text              ro code  0x2000'6164     0x2c  xgetmemchunk.o [2]
+  .text              ro code  0x2000'6190     0xa6  ABImemcpy.o [6]
+  .text              ro code  0x2000'6236     0x1a  xsnprout.o [2]
+  .text              ro code  0x2000'6250      0xc  XXexit.o [6]
+  .text              ro code  0x2000'625c    0xf8c  driver.o [7]
+  .text              ro code  0x2000'71e8    0x30a  osi_freertos.o [4]
+  .text              ro code  0x2000'74f4      0x6  ABImemclr4.o [6]
+  .text              ro code  0x2000'74fc    0x574  cc_pal.o [7]
+  .text              ro code  0x2000'7a70      0x6  ABImemclr.o [6]
+  .text              ro code  0x2000'7a78    0x1e8  interrupt.o [3]
+  .text              ro code  0x2000'7c60    0x704  queue.o [4]
+  .text              ro code  0x2000'8364    0x1b4  port.o [4]
+  .text              ro code  0x2000'8518    0x9bc  tasks.o [4]
+  .text              ro code  0x2000'8ed4     0x3a  ABImemset48.o [6]
+  .text              ro code  0x2000'8f10    0x1dc  spi.o [3]
+  .text              ro code  0x2000'90ec    0x1ac  udma.o [3]
+  .text              ro code  0x2000'9298    0x31c  prcm.o [3]
+  .text              ro code  0x2000'95b4      0x6  utils.o [3]
+  .text              ro code  0x2000'95bc     0x66  ABImemset.o [6]
+  .text              ro code  0x2000'9624     0x10  cpu.o [3]
+  .text              ro code  0x2000'9634    0x298  main.o [1]
+  .text              ro code  0x2000'98cc     0x98  list.o [4]
+  .text              ro code  0x2000'9964     0x38  heap_3.o [4]
+  CODE               ro code  0x2000'999c     0x90  portasm.o [4]
+  .text              ro code  0x2000'9a2c    0x230  I64DivMod.o [6]
+  .text              ro code  0x2000'9c5c     0xca  pinmux.o [1]
+  .text              ro code  0x2000'9d28     0xbc  uart_if.o [1]
+  .text              ro code  0x2000'9de4    0x210  i2c_if.o [1]
+  .text              ro code  0x2000'9ff4    0x17e  circ_buff.o [1]
+  .text              ro code  0x2000'a174    0x44c  audiocodec.o [1]
+  .text              ro code  0x2000'a5c0    0x1e4  gpio_if.o [1]
+  .text              ro code  0x2000'a7a4     0xe8  i2s_if.o [1]
+  .text              ro code  0x2000'a88c    0x102  udma_if.o [1]
+  .text              ro code  0x2000'a990    0x2b4  pcm_handler.o [1]
+  .text              ro code  0x2000'ac44    0x460  control.o [1]
+  .text              ro code  0x2000'b0a4      0x8  heaptramp0.o [2]
+  .text              ro code  0x2000'b0ac      0x2  I64DivZer.o [6]
+  .text              ro code  0x2000'b0b0     0xf8  pin.o [3]
+  .text              ro code  0x2000'b1a8     0xce  gpio.o [3]
+  .text              ro code  0x2000'b278     0x90  uart.o [3]
+  .text              ro code  0x2000'b308     0x3c  vsnprint.o [2]
+  .text              ro code  0x2000'b344     0xb0  i2c.o [3]
+  .text              ro code  0x2000'b3f4    0x1d4  i2s.o [3]
+  .text              ro code  0x2000'b5c8    0x30c  netapp.o [7]
+  .text              ro code  0x2000'b8d4    0xdf2  xprintffull_nomb.o [2]
+  .text              ro code  0x2000'c6c8    0x49c  network.o [1]
+  .text              ro code  0x2000'cb64     0x16  strchr.o [6]
+  .text              ro code  0x2000'cb7c     0x40  xfail_s.o [2]
+  .text              ro code  0x2000'cbbc     0x36  strlen.o [6]
+  .text              ro code  0x2000'cbf4     0x58  memchr.o [6]
+  .text              ro code  0x2000'cc4c    0x1a2  DblMul.o [5]
+  .text              ro code  0x2000'cdf0     0x70  frexp.o [5]
+  .text              ro code  0x2000'ce60     0x2e  DblCmpLe.o [5]
+  .text              ro code  0x2000'ce90     0x2e  DblCmpGe.o [5]
+  .text              ro code  0x2000'cec0    0x13a  ldexp.o [5]
+  .text              ro code  0x2000'cffc     0x3a  DblToS32.o [5]
+  .text              ro code  0x2000'd038     0x22  S32ToDbl.o [5]
+  .text              ro code  0x2000'd05c     0xe2  DblSub.o [5]
+  .text              ro code  0x2000'd140    0x246  DblDiv.o [5]
+  .text              ro code  0x2000'd388     0x28  DblToU32.o [5]
+  .text              ro code  0x2000'd3b0     0x1a  U32ToDbl.o [5]
+  .text              ro code  0x2000'd3cc    0x3b8  socket.o [7]
+  .text              ro code  0x2000'd784    0x1d0  wlan.o [7]
+  .text              ro code  0x2000'd954    0x1ec  device.o [7]
+  .text              ro code  0x2000'db40    0x16a  DblAdd.o [5]
+  .text              ro code  0x2000'dcac    0x13a  speaker.o [1]
+  .rodata            const    0x2000'dde8    0x100  pin.o [3]
+  .text              ro code  0x2000'dee8     0xec  microphone.o [1]
+  .rodata            const    0x2000'dfd4     0xd4  interrupt.o [3]
+  .rodata            const    0x2000'e0a8     0xa8  prcm.o [3]
+  .rodata            const    0x2000'e150     0x68  network.o [1]
+  .rodata            const    0x2000'e1b8     0x64  port.o [4]
+  .rodata            const    0x2000'e21c     0x60  network.o [1]
+  .rodata            const    0x2000'e27c     0x50  queue.o [4]
+  .rodata            const    0x2000'e2cc     0x50  tasks.o [4]
+  .rodata            const    0x2000'e31c     0x48  network.o [1]
+  .rodata            const    0x2000'e364     0x44  network.o [1]
+  .rodata            const    0x2000'e3a8     0x3c  driver.o [7]
+  .rodata            const    0x2000'e3e4     0x38  control.o [1]
+  .rodata            const    0x2000'e41c     0x38  driver.o [7]
+  .rodata            const    0x2000'e454     0x34  audiocodec.o [1]
+  .rodata            const    0x2000'e488     0x30  audiocodec.o [1]
+  .rodata            const    0x2000'e4b8     0x30  control.o [1]
+  .rodata            const    0x2000'e4e8     0x30  main.o [1]
+  .rodata            const    0x2000'e518     0x30  network.o [1]
+  .rodata            const    0x2000'e548     0x2c  main.o [1]
+  .rodata            const    0x2000'e574     0x2c  main.o [1]
+  .rodata            const    0x2000'e5a0     0x2c  main.o [1]
+  .rodata            const    0x2000'e5cc     0x2c  network.o [1]
+  .rodata            const    0x2000'e5f8     0x2c  network.o [1]
+  .text              ro code  0x2000'e624     0x2c  copy_init3.o [6]
+  .rodata            const    0x2000'e650     0x28  network.o [1]
+  .text              ro code  0x2000'e678     0x28  data_init.o [6]
+  .rodata            const    0x2000'e6a0     0x24  audiocodec.o [1]
+  .rodata            const    0x2000'e6c4     0x24  control.o [1]
+  .rodata            const    0x2000'e6e8     0x24  control.o [1]
+  .rodata            const    0x2000'e70c     0x24  control.o [1]
+  .rodata            const    0x2000'e730     0x24  network.o [1]
+  .iar.init_table    const    0x2000'e754     0x24  - Linker created -
+  .rodata            const    0x2000'e778     0x20  audiocodec.o [1]
+  .rodata            const    0x2000'e798     0x20  network.o [1]
+  .rodata            const    0x2000'e7b8     0x20  uart_if.o [1]
+  .text              ro code  0x2000'e7d8     0x1e  cmain.o [6]
+  .text              ro code  0x2000'e7f6      0x4  low_level_init.o [2]
+  .text              ro code  0x2000'e7fa      0x4  exit.o [2]
+  .text              ro code  0x2000'e800      0xa  cexit.o [6]
+  Initializer bytes  const    0x2000'e80c     0x20  <for P1-P2-1>
+  .rodata            const    0x2000'e82c     0x1c  control.o [1]
+  .rodata            const    0x2000'e848     0x1c  control.o [1]
+  .rodata            const    0x2000'e864     0x1c  control.o [1]
+  .rodata            const    0x2000'e880     0x1c  main.o [1]
+  .rodata            const    0x2000'e89c     0x1c  network.o [1]
+  .rodata            const    0x2000'e8b8     0x18  control.o [1]
+  .rodata            const    0x2000'e8d0     0x18  microphone.o [1]
+  .rodata            const    0x2000'e8e8     0x18  microphone.o [1]
+  .rodata            const    0x2000'e900     0x18  network.o [1]
+  .rodata            const    0x2000'e918     0x18  speaker.o [1]
+  .rodata            const    0x2000'e930     0x18  speaker.o [1]
+  .rodata            const    0x2000'e948     0x18  interrupt.o [3]
+  .rodata            const    0x2000'e960     0x18  interrupt.o [3]
+  .rodata            const    0x2000'e978     0x18  interrupt.o [3]
+  .rodata            const    0x2000'e990     0x18  spi.o [3]
+  .rodata            const    0x2000'e9a8     0x14  audiocodec.o [1]
+  .rodata            const    0x2000'e9bc     0x14  control.o [1]
+  .rodata            const    0x2000'e9d0     0x14  control.o [1]
+  .rodata            const    0x2000'e9e4     0x14  control.o [1]
+  .rodata            const    0x2000'e9f8     0x14  control.o [1]
+  .rodata            const    0x2000'ea0c     0x14  control.o [1]
+  .rodata            const    0x2000'ea20     0x14  network.o [1]
+  .rodata            const    0x2000'ea34     0x10  network.o [1]
+  .rodata            const    0x2000'ea44     0x10  network.o [1]
+  .rodata            const    0x2000'ea54     0x10  network.o [1]
+  .rodata            const    0x2000'ea64     0x10  network.o [1]
+  .rodata            const    0x2000'ea74     0x10  network.o [1]
+  .rodata            const    0x2000'ea84     0x10  network.o [1]
+  .rodata            const    0x2000'ea94     0x10  network.o [1]
+  .text              ro code  0x2000'eaa4     0x10  startup_ewarm.o [1]
+  .text              ro code  0x2000'eab4      0xc  cstartup_M.o [6]
+  .rodata            const    0x2000'eac0      0xc  control.o [1]
+  .rodata            const    0x2000'eacc      0xc  control.o [1]
+  .rodata            const    0x2000'ead8      0xc  main.o [1]
+  .rodata            const    0x2000'eae4      0xc  main.o [1]
+  .rodata            const    0x2000'eaf0      0xc  network.o [1]
+  .rodata            const    0x2000'eafc      0xc  network.o [1]
+  .rodata            const    0x2000'eb08      0xc  network.o [1]
+  .rodata            const    0x2000'eb14      0x8  main.o [1]
+  .rodata            const    0x2000'eb1c      0x8  main.o [1]
+  .rodata            const    0x2000'eb24      0x8  microphone.o [1]
+  .rodata            const    0x2000'eb2c      0x8  osi_freertos.o [4]
+  .rodata            const    0x2000'eb34      0x8  tasks.o [4]
+  .rodata            const    0x2000'eb3c      0x4  port.o [4]
+  .rodata            const    0x2000'eb40      0x0  zero_init3.o [6]
+  .rodata            const    0x2000'eb40      0x0  copy_init3.o [6]
+  P1-P2-1                     0x2000'eb40     0x1d  <Init block>
+    .data            inited   0x2000'eb40     0x14  gpio_if.o [1]
+    .data            inited   0x2000'eb54      0x4  port.o [4]
+    .data            inited   0x2000'eb58      0x4  tasks.o [4]
+    .data            inited   0x2000'eb5c      0x1  main.o [1]
+                            - 0x2000'eb5d   0xa75d
+
+"P1-P2", part 2 of 3:                       0x35f8
+  .bss               zero     0x2000'eb60   0x2800  speaker.o [1]
+  .bss               zero     0x2001'1400    0x400  udma_if.o [1]
+  .bss               zero     0x2001'1800    0x200  pcm_handler.o [1]
+  .bss               zero     0x2001'1a00    0x1d8  dlmalloc.o [2]
+  .bss               zero     0x2001'1bd8    0x178  driver.o [7]
+  .bss               zero     0x2001'1d50    0x100  udma_if.o [1]
+  .bss               zero     0x2001'1e50     0xc8  tasks.o [4]
+  .bss               zero     0x2001'1f18     0x60  cc_pal.o [7]
+  .bss               zero     0x2001'1f78     0x50  queue.o [4]
+  .bss               zero     0x2001'1fc8     0x2c  main.o [1]
+  .bss               zero     0x2001'1ff4     0x24  network.o [1]
+  .bss               zero     0x2001'2018     0x18  dlmalloc.o [2]
+  .bss               zero     0x2001'2030     0x14  tasks.o [4]
+  .bss               zero     0x2001'2044     0x14  tasks.o [4]
+  .bss               zero     0x2001'2058     0x14  tasks.o [4]
+  .bss               zero     0x2001'206c     0x14  tasks.o [4]
+  .bss               zero     0x2001'2080     0x14  tasks.o [4]
+  .bss               zero     0x2001'2094      0x8  network.o [1]
+  .bss               zero     0x2001'209c      0x8  driver.o [7]
+  .bss               zero     0x2001'20a4      0x4  audiocodec.o [1]
+  .bss               zero     0x2001'20a8      0x4  control.o [1]
+  .bss               zero     0x2001'20ac      0x4  control.o [1]
+  .bss               zero     0x2001'20b0      0x4  control.o [1]
+  .bss               zero     0x2001'20b4      0x4  control.o [1]
+  .bss               zero     0x2001'20b8      0x4  gpio_if.o [1]
+  .bss               zero     0x2001'20bc      0x4  gpio_if.o [1]
+  .bss               zero     0x2001'20c0      0x4  gpio_if.o [1]
+  .bss               zero     0x2001'20c4      0x4  main.o [1]
+  .bss               zero     0x2001'20c8      0x4  main.o [1]
+  .bss               zero     0x2001'20cc      0x4  main.o [1]
+  .bss               zero     0x2001'20d0      0x4  main.o [1]
+  .bss               zero     0x2001'20d4      0x4  main.o [1]
+  .bss               zero     0x2001'20d8      0x4  microphone.o [1]
+  .bss               zero     0x2001'20dc      0x4  network.o [1]
+  .bss               zero     0x2001'20e0      0x4  network.o [1]
+  .bss               zero     0x2001'20e4      0x4  pcm_handler.o [1]
+  .bss               zero     0x2001'20e8      0x4  pcm_handler.o [1]
+  .bss               zero     0x2001'20ec      0x4  pcm_handler.o [1]
+  .bss               zero     0x2001'20f0      0x4  speaker.o [1]
+  .bss               zero     0x2001'20f4      0x4  uart_if.o [1]
+  .bss               zero     0x2001'20f8      0x4  osi_freertos.o [4]
+  .bss               zero     0x2001'20fc      0x4  osi_freertos.o [4]
+  .bss               zero     0x2001'2100      0x4  osi_freertos.o [4]
+  .bss               zero     0x2001'2104      0x4  port.o [4]
+  .bss               zero     0x2001'2108      0x4  tasks.o [4]
+  .bss               zero     0x2001'210c      0x4  tasks.o [4]
+  .bss               zero     0x2001'2110      0x4  tasks.o [4]
+  .bss               zero     0x2001'2114      0x4  tasks.o [4]
+  .bss               zero     0x2001'2118      0x4  tasks.o [4]
+  .bss               zero     0x2001'211c      0x4  tasks.o [4]
+  .bss               zero     0x2001'2120      0x4  tasks.o [4]
+  .bss               zero     0x2001'2124      0x4  tasks.o [4]
+  .bss               zero     0x2001'2128      0x4  tasks.o [4]
+  .bss               zero     0x2001'212c      0x4  tasks.o [4]
+  .bss               zero     0x2001'2130      0x4  tasks.o [4]
+  .bss               zero     0x2001'2134      0x4  tasks.o [4]
+  .bss               zero     0x2001'2138      0x4  tasks.o [4]
+  .bss               zero     0x2001'213c      0x4  tasks.o [4]
+  .bss               zero     0x2001'2140      0x4  driver.o [7]
+  .bss               zero     0x2001'2144      0x4  xgetmemchunk.o [2]
+  .bss               zero     0x2001'2148      0x4  xfail_s.o [2]
+  .bss               zero     0x2001'214c      0x2  audiocodec.o [1]
+  .bss               zero     0x2001'214e      0x1  audiocodec.o [1]
+  .bss               zero     0x2001'214f      0x1  audiocodec.o [1]
+  .bss               zero     0x2001'2150      0x1  audiocodec.o [1]
+  .bss               zero     0x2001'2151      0x1  control.o [1]
+  .bss               zero     0x2001'2152      0x1  control.o [1]
+  .bss               zero     0x2001'2153      0x1  gpio_if.o [1]
+  .bss               zero     0x2001'2154      0x1  gpio_if.o [1]
+  .bss               zero     0x2001'2155      0x1  gpio_if.o [1]
+  .bss               zero     0x2001'2156      0x1  udma_if.o [1]
+  .bss               zero     0x2001'2157      0x1  port.o [4]
+                            - 0x2001'2158   0x35f8
+
+"P1-P2", part 3 of 3:                      0x19000
+  .noinit            uninit   0x2001'2158   0x1000  startup_ewarm.o [1]
+  HEAP                        0x2001'3158  0x18000  <Block>
+    HEAP             uninit   0x2001'3158  0x18000  <Block tail>
+                            - 0x2002'b158  0x19000
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+  0x2002'b158  0x2003'0000  0x4ea9
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x35f8:
+          0x2000'eb60  0x35f8
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x20 (110% of destination):
+          0x2000'e80c    0x20
+    1 destination range, total size 0x1d:
+          0x2000'eb40    0x1d
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module              ro code  ro data  rw data
+    ------              -------  -------  -------
+command line/config:
+    ---------------------------------------------
+    Total:
+
+C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj: [1]
+    audiocodec.o          1 100      188        9
+    circ_buff.o             382
+    control.o             1 120      444       18
+    gpio_if.o               484       20       35
+    i2c_if.o                528
+    i2s_if.o                232
+    main.o                  664      249       65
+    microphone.o            236       56        4
+    network.o             1 180      804       52
+    pcm_handler.o           692               524
+    pinmux.o                202
+    speaker.o               314       48   10 244
+    startup_ewarm.o          16    1 024    4 096
+    uart_if.o               188       32        4
+    udma_if.o               258             1 281
+    ---------------------------------------------
+    Total:                7 596    2 865   16 332
+
+dl7M_tln.a: [2]
+    abort.o                   6
+    dlmalloc.o            7 460               496
+    exit.o                    4
+    heaptramp0.o              8
+    low_level_init.o          4
+    vsnprint.o               60
+    xfail_s.o                64                 4
+    xgetmemchunk.o           44                 4
+    xprintffull_nomb.o    3 570
+    xsnprout.o               26
+    ---------------------------------------------
+    Total:               11 246               504
+
+driverlib.a: [3]
+    cpu.o                    16
+    gpio.o                  206
+    i2c.o                   176
+    i2s.o                   468
+    interrupt.o             488      284
+    pin.o                   248      256
+    prcm.o                  796      168
+    spi.o                   476       24
+    uart.o                  144
+    udma.o                  428
+    utils.o                   6
+    ---------------------------------------------
+    Total:                3 452      732
+
+free_rtos.a: [4]
+    heap_3.o                 56
+    list.o                  152
+    osi_freertos.o          778        8       12
+    port.o                  436      108        9
+    portasm.o               144
+    queue.o               1 796       80       80
+    tasks.o               2 492       92      360
+    ---------------------------------------------
+    Total:                5 854      288      461
+
+m7M_tl.a: [5]
+    DblAdd.o                362
+    DblCmpGe.o               46
+    DblCmpLe.o               46
+    DblDiv.o                582
+    DblMul.o                418
+    DblSub.o                226
+    DblToS32.o               58
+    DblToU32.o               40
+    S32ToDbl.o               34
+    U32ToDbl.o               26
+    frexp.o                 112
+    ldexp.o                 314
+    ---------------------------------------------
+    Total:                2 264
+
+rt7M_tl.a: [6]
+    ABImemclr.o               6
+    ABImemclr4.o              6
+    ABImemcpy.o             166
+    ABImemset.o             102
+    ABImemset48.o            58
+    I64DivMod.o             560
+    I64DivZer.o               2
+    XXexit.o                 12
+    cexit.o                  10
+    cmain.o                  30
+    copy_init3.o             44
+    cstartup_M.o             12
+    data_init.o              40
+    memchr.o                 88
+    strchr.o                 22
+    strlen.o                 54
+    zero_init3.o             58
+    ---------------------------------------------
+    Total:                1 270
+
+simplelink.a: [7]
+    cc_pal.o              1 396                96
+    device.o                492
+    driver.o              3 980      116      388
+    netapp.o                780
+    socket.o                952
+    wlan.o                  464
+    ---------------------------------------------
+    Total:                8 064      116      484
+
+    Gaps                     50        2      160
+    Linker created                    41   98 304
+-------------------------------------------------
+    Grand Total:         39 796    4 044  116 245
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base   0x2000'e754           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x2000'e778           --   Gb  - Linker created -
+?main                   0x2000'e7d9          Code  Gb  cmain.o [6]
+AudioCaptureRendererConfigure
+                        0x2000'a7ef    0x72  Code  Gb  i2s_if.o [1]
+AudioCodecConfig        0x2000'a195   0x2a2  Code  Gb  audiocodec.o [1]
+AudioCodecMicVolCtrl    0x2000'a497    0x5a  Code  Gb  audiocodec.o [1]
+AudioCodecMicVolCtrl::vol
+                        0x2001'2150     0x1  Data  Lc  audiocodec.o [1]
+AudioCodecPageSelect    0x2000'a4f1    0x10  Code  Lc  audiocodec.o [1]
+AudioCodecRegWrite      0x2000'a501    0x98  Code  Lc  audiocodec.o [1]
+AudioCodecRegWrite::__FUNCTION__
+                        0x2000'e9a8    0x14  Data  Lc  audiocodec.o [1]
+AudioCodecReset         0x2000'a175    0x20  Code  Gb  audiocodec.o [1]
+AudioCodecSpeakerVolCtrl
+                        0x2000'a437    0x60  Code  Gb  audiocodec.o [1]
+AudioControlTask        0x2000'af87    0x20  Code  Gb  control.o [1]
+AudioInit               0x2000'a7a5     0xc  Code  Gb  i2s_if.o [1]
+AudioSetupDMAMode       0x2000'a7b1    0x3e  Code  Gb  i2s_if.o [1]
+Audio_Start             0x2000'a861    0x24  Code  Gb  i2s_if.o [1]
+BoardInit               0x2000'963d    0x18  Code  Gb  main.o [1]
+BusFaultHandler         0x2000'eab1     0x2  Code  Lc  startup_ewarm.o [1]
+CPUcpsie                0x2000'9625    0x10  Code  Gb  cpu.o [3]
+ConfigureMode           0x2000'c8f7    0x42  Code  Lc  network.o [1]
+ConfigureMode::__FUNCTION__
+                        0x2000'ea44    0x10  Data  Lc  network.o [1]
+ConnectToNetwork        0x2000'c997    0x7a  Code  Gb  network.o [1]
+ConnectToNetwork::__FUNCTION__
+                        0x2000'ea20    0x14  Data  Lc  network.o [1]
+ControlTaskCreate       0x2000'afa7    0x7c  Code  Gb  control.o [1]
+ControlTaskCreate::__FUNCTION__
+                        0x2000'e9e4    0x14  Data  Lc  control.o [1]
+CopyPingResultsToReport
+                        0x2000'b755    0x1a  Code  Gb  netapp.o [7]
+CreateCircularBuffer    0x2000'9ff5    0x30  Code  Gb  circ_buff.o [1]
+CreateUdpServer         0x2000'ca11    0x76  Code  Gb  network.o [1]
+CreateUdpServer::__FUNCTION__
+                        0x2000'ea54    0x10  Data  Lc  network.o [1]
+DMAMsgQ                 0x2001'1f70     0x4  Data  Gb  cc_pal.o [7]
+DMAPingPongCompleteAppCB_opt
+                        0x2000'a991   0x1b0  Code  Gb  pcm_handler.o [1]
+DmaErrorIntHandler      0x2000'a8a3     0xc  Code  Gb  udma_if.o [1]
+DmaSpiSwIntHandler      0x2000'74fd    0x2a  Code  Gb  cc_pal.o [7]
+DmaSwIntHandler         0x2000'a88d    0x16  Code  Gb  udma_if.o [1]
+FaultISR                0x2000'eaaf     0x2  Code  Lc  startup_ewarm.o [1]
+FillBuffer              0x2000'a02d    0x78  Code  Gb  circ_buff.o [1]
+GPIODirModeSet          0x2000'b1a9    0x24  Code  Gb  gpio.o [3]
+GPIOIntClear            0x2000'b25f     0x6  Code  Gb  gpio.o [3]
+GPIOIntDisable          0x2000'b239    0x12  Code  Gb  gpio.o [3]
+GPIOIntEnable           0x2000'b229    0x10  Code  Gb  gpio.o [3]
+GPIOIntStatus           0x2000'b24b    0x14  Code  Gb  gpio.o [3]
+GPIOIntTypeSet          0x2000'b1cd    0x5c  Code  Gb  gpio.o [3]
+GPIOPinRead             0x2000'b265     0x8  Code  Gb  gpio.o [3]
+GPIOPinWrite            0x2000'b26d     0xa  Code  Gb  gpio.o [3]
+GPIO_IF_GetPortNPin     0x2000'a729    0x32  Code  Gb  gpio_if.o [1]
+GPIO_IF_LedConfigure    0x2000'a5c1    0x30  Code  Gb  gpio_if.o [1]
+GPIO_IF_LedOff          0x2000'a68d    0x9c  Code  Gb  gpio_if.o [1]
+GPIO_IF_LedOn           0x2000'a5f1    0x9c  Code  Gb  gpio_if.o [1]
+GPIO_IF_Set             0x2000'a779    0x2c  Code  Gb  gpio_if.o [1]
+GetBufferSize           0x2000'a105    0x28  Code  Gb  circ_buff.o [1]
+GetReadPtr              0x2000'a025     0x4  Code  Gb  circ_buff.o [1]
+GetWritePtr             0x2000'a029     0x4  Code  Gb  circ_buff.o [1]
+HEAP$$Base              0x2001'3158           --   Gb  - Linker created -
+HEAP$$Limit             0x2002'b158           --   Gb  - Linker created -
+I                       0x2001'214e     0x1  Data  Lc  audiocodec.o [1]
+I2CMasterControl        0x2000'b3c9     0x4  Code  Gb  i2c.o [3]
+I2CMasterDataGet        0x2000'b3ed     0x4  Code  Gb  i2c.o [3]
+I2CMasterDataPut        0x2000'b3e7     0x6  Code  Gb  i2c.o [3]
+I2CMasterEnable         0x2000'b3a1     0xa  Code  Gb  i2c.o [3]
+I2CMasterErr            0x2000'b3cd    0x1a  Code  Gb  i2c.o [3]
+I2CMasterInitExpClk     0x2000'b345    0x4c  Code  Gb  i2c.o [3]
+I2CMasterIntClearEx     0x2000'b3b9     0x4  Code  Gb  i2c.o [3]
+I2CMasterIntStatusEx    0x2000'b3ab     0xe  Code  Gb  i2c.o [3]
+I2CMasterSlaveAddrSet   0x2000'b3bd     0xc  Code  Gb  i2c.o [3]
+I2CMasterTimeoutSet     0x2000'b3f1     0x4  Code  Gb  i2c.o [3]
+I2CTransact             0x2000'9de5    0x78  Code  Lc  i2c_if.o [1]
+I2C_IF_Open             0x2000'9fab    0x42  Code  Gb  i2c_if.o [1]
+I2C_IF_Read             0x2000'9ee1    0x90  Code  Gb  i2c_if.o [1]
+I2C_IF_ReadFrom         0x2000'9f71    0x3a  Code  Gb  i2c_if.o [1]
+I2C_IF_Write            0x2000'9e5d    0x84  Code  Gb  i2c_if.o [1]
+I2SConfigSetExpClk      0x2000'b47d    0x96  Code  Gb  i2s.o [3]
+I2SEnable               0x2000'b403    0x7a  Code  Gb  i2s.o [3]
+I2SGBLEnable            0x2000'b3f5     0xe  Code  Lc  i2s.o [3]
+I2SIntClear             0x2000'b58b    0x22  Code  Gb  i2s.o [3]
+I2SIntEnable            0x2000'b563    0x28  Code  Gb  i2s.o [3]
+I2SIntRegister          0x2000'b5b9    0x10  Code  Gb  i2s.o [3]
+I2SRxFIFOEnable         0x2000'b529    0x16  Code  Gb  i2s.o [3]
+I2SSerializerConfig     0x2000'b53f    0x24  Code  Gb  i2s.o [3]
+I2STxFIFOEnable         0x2000'b513    0x16  Code  Gb  i2s.o [3]
+InitControl             0x2000'aeed    0x9a  Code  Gb  control.o [1]
+InitControl::__FUNCTION__
+                        0x2000'eacc     0xc  Data  Lc  control.o [1]
+InitTerm                0x2000'9d29    0x1e  Code  Gb  uart_if.o [1]
+InitializeAppVariables  0x2000'c8c1    0x36  Code  Lc  network.o [1]
+IntDefaultHandler       0x2000'eab3     0x2  Code  Lc  startup_ewarm.o [1]
+IntDefaultHandler       0x2000'7a79     0x2  Code  Lc  interrupt.o [3]
+IntDisable              0x2000'7b69    0x8e  Code  Gb  interrupt.o [3]
+IntEnable               0x2000'7ad9    0x8e  Code  Gb  interrupt.o [3]
+IntMasterEnable         0x2000'7a7b     0xa  Code  Gb  interrupt.o [3]
+IntPendClear            0x2000'7bf9    0x42  Code  Gb  interrupt.o [3]
+IntPrioritySet          0x2000'7aa1    0x36  Code  Gb  interrupt.o [3]
+IntRegister             0x2000'7a8b     0xa  Code  Gb  interrupt.o [3]
+IntUnregister           0x2000'7a95     0xc  Code  Gb  interrupt.o [3]
+IntVTableBaseSet        0x2000'7a85     0x6  Code  Gb  interrupt.o [3]
+IsBufferEmpty           0x2000'a12d    0x12  Code  Gb  circ_buff.o [1]
+IsBufferSizeFilled      0x2000'a13f    0x1a  Code  Gb  circ_buff.o [1]
+IsBufferVacant          0x2000'a159    0x1a  Code  Gb  circ_buff.o [1]
+J                       0x2001'214f     0x1  Data  Lc  audiocodec.o [1]
+LoadInt                 0x2000'ba83    0x7a  Code  Lc  xprintffull_nomb.o [2]
+MICButtonHandler        0x2000'ae69    0x42  Code  Lc  control.o [1]
+MICButtonHandler::__FUNCTION__
+                        0x2000'e9d0    0x14  Data  Lc  control.o [1]
+MICStartStopControl     0x2000'ae19    0x28  Code  Lc  control.o [1]
+Message                 0x2000'9d47    0x1c  Code  Gb  uart_if.o [1]
+MicroPhoneControl       0x2000'ac45    0xc4  Code  Gb  control.o [1]
+MicroPhoneControl::__FUNCTION__
+                        0x2000'e9bc    0x14  Data  Lc  control.o [1]
+Microphone              0x2000'dee9    0xec  Code  Gb  microphone.o [1]
+Network                 0x2000'ca87    0x56  Code  Gb  network.o [1]
+NmiSR                   0x2000'eaad     0x2  Code  Lc  startup_ewarm.o [1]
+NwpMaskInterrupt        0x2000'792b     0x4  Code  Gb  cc_pal.o [7]
+NwpPowerOff             0x2000'799d    0x2e  Code  Gb  cc_pal.o [7]
+NwpPowerOn              0x2000'797d    0x20  Code  Gb  cc_pal.o [7]
+NwpPowerOnPreamble      0x2000'7937    0x46  Code  Gb  cc_pal.o [7]
+NwpRegisterInterruptHandler
+                        0x2000'7909    0x22  Code  Gb  cc_pal.o [7]
+NwpUnMaskInterrupt      0x2000'792f     0x2  Code  Gb  cc_pal.o [7]
+OpcodeTranslateTable    0x2000'e3a8    0x3c  Data  Gb  driver.o [7]
+PRCMCC3200MCUInit       0x2000'9437    0xfe  Code  Gb  prcm.o [3]
+PRCMHIBRegRead          0x2000'9535    0x10  Code  Gb  prcm.o [3]
+PRCMHIBRegWrite         0x2000'9545     0xe  Code  Gb  prcm.o [3]
+PRCMI2SClockFreqSet     0x2000'9405    0x32  Code  Gb  prcm.o [3]
+PRCMPeripheralClkDisable
+                        0x2000'92eb    0x22  Code  Gb  prcm.o [3]
+PRCMPeripheralClkEnable
+                        0x2000'92b9    0x32  Code  Gb  prcm.o [3]
+PRCMPeripheralClockGet  0x2000'930d    0x74  Code  Gb  prcm.o [3]
+PRCMPeripheralReset     0x2000'9381    0x64  Code  Gb  prcm.o [3]
+PRCMPeripheralStatusGet
+                        0x2000'93e5    0x20  Code  Gb  prcm.o [3]
+PRCMSysResetCauseGet    0x2000'9299    0x20  Code  Gb  prcm.o [3]
+PRCM_PeriphRegsList     0x2000'e0a8    0xa8  Data  Lc  prcm.o [3]
+PinConfigSet            0x2000'b0d1    0x5a  Code  Gb  pin.o [3]
+PinModeSet              0x2000'b0b1    0x20  Code  Gb  pin.o [3]
+PinMuxConfig            0x2000'9c5d    0xbe  Code  Gb  pinmux.o [1]
+PinMuxConfig_for_Uart1  0x2000'9d25     0x2  Code  Gb  pinmux.o [1]
+PinTypeGPIO             0x2000'b17d    0x2c  Code  Gb  pin.o [3]
+PinTypeI2C              0x2000'b14f    0x18  Code  Gb  pin.o [3]
+PinTypeI2S              0x2000'b167    0x16  Code  Gb  pin.o [3]
+PinTypeUART             0x2000'b139    0x16  Code  Gb  pin.o [3]
+Region$$Table$$Base     0x2000'e754           --   Gb  - Linker created -
+Region$$Table$$Limit    0x2000'e778           --   Gb  - Linker created -
+Report                  0x2000'9d63    0x74  Code  Gb  uart_if.o [1]
+ResetISR                0x2000'eaa5     0x8  Code  Gb  startup_ewarm.o [1]
+RxIrqCnt                0x2001'209c     0x1  Data  Gb  driver.o [7]
+RxMsgClassLUT           0x2000'71c8    0x20  Data  Gb  driver.o [7]
+SPICSDisable            0x2000'90db    0x12  Code  Gb  spi.o [3]
+SPICSEnable             0x2000'90c9    0x12  Code  Gb  spi.o [3]
+SPIConfigSetExpClk      0x2000'8f95    0x60  Code  Gb  spi.o [3]
+SPIDisable              0x2000'8f47    0x12  Code  Gb  spi.o [3]
+SPIDmaDisable           0x2000'8f69    0x10  Code  Gb  spi.o [3]
+SPIDmaEnable            0x2000'8f59    0x10  Code  Gb  spi.o [3]
+SPIDmaMaskGet           0x2000'8f11    0x24  Code  Lc  spi.o [3]
+SPIEnable               0x2000'8f35    0x12  Code  Gb  spi.o [3]
+SPIFIFODisable          0x2000'9005    0x12  Code  Gb  spi.o [3]
+SPIFIFOEnable           0x2000'8ff5    0x10  Code  Gb  spi.o [3]
+SPIFIFOLevelSet         0x2000'9017    0x1c  Code  Gb  spi.o [3]
+SPIIntClear             0x2000'907d    0x30  Code  Gb  spi.o [3]
+SPIIntEnable            0x2000'9045    0x38  Code  Gb  spi.o [3]
+SPIReset                0x2000'8f79    0x1c  Code  Gb  spi.o [3]
+SPIWordCountSet         0x2000'9033    0x12  Code  Gb  spi.o [3]
+SetupDMAReceive         0x2000'7527    0x6e  Code  Lc  cc_pal.o [7]
+SetupPingPongDMATransferRx
+                        0x2000'abad    0x6c  Code  Gb  pcm_handler.o [1]
+SetupPingPongDMATransferTx
+                        0x2000'ab41    0x6c  Code  Gb  pcm_handler.o [1]
+SimpleLinkHttpServerCallback
+                        0x2000'c8a7     0x2  Code  Gb  network.o [1]
+SimpleLinkNetAppEventHandler
+                        0x2000'c831    0x76  Code  Gb  network.o [1]
+SimpleLinkSockEventHandler
+                        0x2000'c8a9    0x18  Code  Gb  network.o [1]
+SimpleLinkWlanEventHandler
+                        0x2000'c70d   0x124  Code  Gb  network.o [1]
+Speaker                 0x2000'ddd9     0xe  Code  Gb  speaker.o [1]
+Speaker2                0x2000'dcad   0x10e  Code  Gb  speaker.o [1]
+SpeakerButtonHandler    0x2000'aeab    0x42  Code  Lc  control.o [1]
+SpeakerButtonHandler::__FUNCTION__
+                        0x2000'e8b8    0x18  Data  Lc  control.o [1]
+SpeakerControl          0x2000'ad09   0x110  Code  Gb  control.o [1]
+SpeakerStartStopControl
+                        0x2000'ae41    0x28  Code  Lc  control.o [1]
+StartResponseLUT        0x2000'db34     0x8  Data  Gb  device.o [7]
+UARTCharPut             0x2000'b2fd     0xc  Code  Gb  uart.o [3]
+UARTConfigSetExpClk     0x2000'b279    0x52  Code  Gb  uart.o [3]
+UARTDisable             0x2000'b2df    0x18  Code  Gb  uart.o [3]
+UARTEnable              0x2000'b2cb    0x14  Code  Gb  uart.o [3]
+UDMAChannelSelect       0x2000'a905    0x28  Code  Gb  udma_if.o [1]
+UDMAInit                0x2000'a8af    0x56  Code  Gb  udma_if.o [1]
+UDMASetupTransfer       0x2000'a941    0x4e  Code  Gb  udma_if.o [1]
+UpdateReadPtr           0x2000'a0a5    0x30  Code  Gb  circ_buff.o [1]
+UpdateWritePtr          0x2000'a0d5    0x30  Code  Gb  circ_buff.o [1]
+UtilsDelay              0x2000'95b5     0x6  Code  Gb  utils.o [3]
+VStartSimpleLinkSpawnTask
+                        0x2000'73e3    0x4c  Code  Gb  osi_freertos.o [4]
+WlanConnect             0x2000'c939    0x5e  Code  Lc  network.o [1]
+WlanConnect::__FUNCTION__
+                        0x2000'eaf0     0xc  Data  Lc  network.o [1]
+_GenldFullNoMb          0x2000'c3c5   0x274  Code  Lc  xprintffull_nomb.o [2]
+_LdtobFullNoMb          0x2000'bfc1   0x3d6  Code  Lc  xprintffull_nomb.o [2]
+_LitobFullNoMb          0x2000'be71   0x10a  Code  Lc  xprintffull_nomb.o [2]
+_PrintfFullNoMb         0x2000'b8d5   0x19e  Code  Gb  xprintffull_nomb.o [2]
+_PutcharsFullNoMb       0x2000'c639    0x2e  Code  Lc  xprintffull_nomb.o [2]
+_PutfldFullNoMb         0x2000'bafd   0x268  Code  Lc  xprintffull_nomb.o [2]
+_PuttxtFullNoMb         0x2000'bd65   0x10c  Code  Lc  xprintffull_nomb.o [2]
+_SNProut                0x2000'6237    0x1a  Code  Gb  xsnprout.o [2]
+_SlActionLookupTable    0x2000'e41c    0x38  Data  Gb  driver.o [7]
+_SlAsyncEventGenericHandler
+                        0x2000'6b0b    0x50  Code  Gb  driver.o [7]
+_SlDrvClassifyRxMsg     0x2000'6c59    0x72  Code  Gb  driver.o [7]
+_SlDrvCmdOp             0x2000'641d    0x66  Code  Gb  driver.o [7]
+_SlDrvCmdSend           0x2000'6e0d    0x4e  Code  Gb  driver.o [7]
+_SlDrvDataReadOp        0x2000'6483   0x108  Code  Gb  driver.o [7]
+_SlDrvDataWriteOp       0x2000'658b    0xe0  Code  Gb  driver.o [7]
+_SlDrvDeviceEventHandler
+                        0x2000'db21    0x10  Code  Gb  device.o [7]
+_SlDrvDriverCBDeinit    0x2000'635d    0x8a  Code  Gb  driver.o [7]
+_SlDrvDriverCBInit      0x2000'629d    0xc0  Code  Gb  driver.o [7]
+_SlDrvMemZero           0x2000'71a5     0x4  Code  Gb  driver.o [7]
+_SlDrvMsgRead           0x2000'677b   0x390  Code  Gb  driver.o [7]
+_SlDrvMsgReadCmdCtx     0x2000'6b5b    0x96  Code  Gb  driver.o [7]
+_SlDrvMsgReadSpawnCtx   0x2000'6bf1    0x68  Code  Gb  driver.o [7]
+_SlDrvMsgWrite          0x2000'666b   0x10a  Code  Gb  driver.o [7]
+_SlDrvNetAppEventHandler
+                        0x2000'b7d5    0xf6  Code  Gb  netapp.o [7]
+_SlDrvProtectAsyncRespSetting
+                        0x2000'625d    0x40  Code  Gb  driver.o [7]
+_SlDrvProtectionObjLockWaitForever
+                        0x2000'715d     0xe  Code  Gb  driver.o [7]
+_SlDrvProtectionObjUnLock
+                        0x2000'7175    0x10  Code  Gb  driver.o [7]
+_SlDrvReleasePoolObj    0x2000'6f65    0xf6  Code  Gb  driver.o [7]
+_SlDrvResetCmdExt       0x2000'71a9     0xe  Code  Gb  driver.o [7]
+_SlDrvRxHdrRead         0x2000'6ccb   0x142  Code  Gb  driver.o [7]
+_SlDrvRxIrqHandler      0x2000'63e7    0x36  Code  Gb  driver.o [7]
+_SlDrvSyncObjSignal     0x2000'7155     0x8  Code  Gb  driver.o [7]
+_SlDrvSyncObjWaitForever
+                        0x2000'7149     0xc  Code  Gb  driver.o [7]
+_SlDrvWaitForPoolObj    0x2000'6e65   0x100  Code  Gb  driver.o [7]
+_SlFindAndSetActiveObj  0x2000'70b9    0x90  Code  Gb  driver.o [7]
+_SlNetAppSendTokenValueCmdCtrl
+                        0x2000'b8d0     0x4  Data  Gb  netapp.o [7]
+_SlPayloadByProtocolLUT
+                        0x2000'd768    0x10  Data  Gb  socket.o [7]
+_SlRecvfomCmdCtrl       0x2000'd780     0x4  Data  Gb  socket.o [7]
+_SlRegisterServiceCtrl  0x2000'b8cc     0x4  Data  Gb  netapp.o [7]
+_SlRemoveFromList       0x2000'7061    0x58  Code  Gb  driver.o [7]
+_SlSockCloseCmdCtrl     0x2000'd77c     0x4  Data  Gb  socket.o [7]
+_SlSockSocketCmdCtrl    0x2000'd778     0x4  Data  Gb  socket.o [7]
+_SlStopCmdCtrl          0x2000'db3c     0x4  Data  Gb  device.o [7]
+_SlWlanSetModeCmdCtrl   0x2000'd950     0x4  Data  Gb  wlan.o [7]
+__Errorlog              0x2001'20f4     0x4  Data  Lc  uart_if.o [1]
+__aeabi_cdcmple         0x2000'ce61          Code  Gb  DblCmpLe.o [5]
+__aeabi_cdrcmple        0x2000'ce91          Code  Gb  DblCmpGe.o [5]
+__aeabi_d2iz            0x2000'cffd          Code  Gb  DblToS32.o [5]
+__aeabi_d2uiz           0x2000'd389          Code  Gb  DblToU32.o [5]
+__aeabi_ddiv            0x2000'd141          Code  Gb  DblDiv.o [5]
+__aeabi_dmul            0x2000'cc4d          Code  Gb  DblMul.o [5]
+__aeabi_dsub            0x2000'd05d          Code  Gb  DblSub.o [5]
+__aeabi_i2d             0x2000'd039          Code  Gb  S32ToDbl.o [5]
+__aeabi_ldiv0           0x2000'b0ad          Code  Gb  I64DivZer.o [6]
+__aeabi_memclr          0x2000'7a71          Code  Gb  ABImemclr.o [6]
+__aeabi_memclr4         0x2000'74f5          Code  Gb  ABImemclr4.o [6]
+__aeabi_memcpy          0x2000'6191          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy4         0x2000'61b1          Code  Gb  ABImemcpy.o [6]
+__aeabi_memcpy8         0x2000'61b1          Code  Gb  ABImemcpy.o [6]
+__aeabi_memset          0x2000'95bd          Code  Gb  ABImemset.o [6]
+__aeabi_memset4         0x2000'8ed5          Code  Gb  ABImemset48.o [6]
+__aeabi_memset8         0x2000'8ed5          Code  Gb  ABImemset48.o [6]
+__aeabi_ui2d            0x2000'd3b1          Code  Gb  U32ToDbl.o [5]
+__aeabi_uldivmod        0x2000'9a2d          Code  Gb  I64DivMod.o [6]
+__cmain                 0x2000'e7d9          Code  Gb  cmain.o [6]
+__data_GetMemChunk      0x2000'6165    0x2c  Code  Gb  xgetmemchunk.o [2]
+__data_GetMemChunk::start
+                        0x2001'2144     0x4  Data  Lc  xgetmemchunk.o [2]
+__exit                  0x2000'6251          Code  Gb  XXexit.o [6]
+__iar_Fail_s            0x2000'cb7d    0x1c  Code  Gb  xfail_s.o [2]
+__iar_Memchr            0x2000'cbf5          Code  Gb  memchr.o [6]
+__iar_Memset            0x2000'95bd          Code  Gb  ABImemset.o [6]
+__iar_Memset4_word      0x2000'8edd          Code  Gb  ABImemset48.o [6]
+__iar_Memset8_word      0x2000'8edd          Code  Gb  ABImemset48.o [6]
+__iar_Memset_word       0x2000'95c5          Code  Gb  ABImemset.o [6]
+__iar_Strchr            0x2000'cb65          Code  Gb  strchr.o [6]
+__iar_copy_init3        0x2000'e625    0x2c  Code  Gb  copy_init3.o [6]
+__iar_dadd              0x2000'd06d          Code  Gb  DblSub.o [5]
+__iar_data_init3        0x2000'e679    0x28  Code  Gb  data_init.o [6]
+__iar_dlfree            0x2000'5885   0x4f6  Code  Gb  dlmalloc.o [2]
+__iar_dlmalloc          0x2000'55cf   0x2b6  Code  Gb  dlmalloc.o [2]
+__iar_dlrealloc         0x2000'6099    0x7c  Code  Gb  dlmalloc.o [2]
+__iar_dsub              0x2000'db41          Code  Gb  DblAdd.o [5]
+__iar_dsubStart         0x2000'db53          Code  Gb  DblAdd.o [5]
+__iar_frexp             0x2000'cdfd          Code  Gb  frexp.o [5]
+__iar_frexp64           0x2000'cdf1          Code  Gb  frexp.o [5]
+__iar_frexpl            0x2000'cdfd          Code  Gb  frexp.o [5]
+__iar_ldexp64           0x2000'cec1          Code  Gb  ldexp.o [5]
+__iar_program_start     0x2000'eab5          Code  Gb  cstartup_M.o [6]
+__iar_scalbln64         0x2000'cec1          Code  Gb  ldexp.o [5]
+__iar_scalbn64          0x2000'cec1          Code  Gb  ldexp.o [5]
+__iar_zero_init3        0x2000'612b    0x3a  Code  Gb  zero_init3.o [6]
+__low_level_init        0x2000'e7f7     0x4  Code  Gb  low_level_init.o [2]
+__vector_table          0x2000'4000   0x400  Data  Gb  startup_ewarm.o [1]
+_call_main              0x2000'e7e5          Code  Gb  cmain.o [6]
+_exit                   0x2000'e801          Code  Gb  cexit.o [6]
+_gm_                    0x2001'1a00   0x1d8  Data  Lc  dlmalloc.o [2]
+_main                   0x2000'e7f3          Code  Gb  cmain.o [6]
+_sl_BuildAddress        0x2000'd3cd    0x2a  Code  Gb  socket.o [7]
+_sl_HandleAsync_Accept  0x2000'd6e5    0x34  Code  Gb  socket.o [7]
+_sl_HandleAsync_Connect
+                        0x2000'd62d    0x58  Code  Gb  socket.o [7]
+_sl_HandleAsync_DnsGetHostByName
+                        0x2000'b701    0x54  Code  Gb  netapp.o [7]
+_sl_HandleAsync_DnsGetHostByService
+                        0x2000'b6a1    0x60  Code  Gb  netapp.o [7]
+_sl_HandleAsync_InitComplete
+                        0x2000'd9e1    0x62  Code  Gb  device.o [7]
+_sl_HandleAsync_PingResponse
+                        0x2000'b76f    0x5e  Code  Gb  netapp.o [7]
+_sl_HandleAsync_Select  0x2000'd719    0x28  Code  Gb  socket.o [7]
+_sl_HandleAsync_Stop    0x2000'da43    0x3e  Code  Gb  device.o [7]
+_sl_TruncatePayloadByProtocol
+                        0x2000'd3f7    0x1a  Code  Gb  socket.o [7]
+abort                   0x2000'6125     0x6  Code  Gb  abort.o [2]
+add_segment             0x2000'47c9   0x1f2  Code  Lc  dlmalloc.o [2]
+cc_SetupTransfer        0x2000'7a21    0x42  Code  Lc  cc_pal.o [7]
+dispose_chunk           0x2000'4b95   0x4a6  Code  Lc  dlmalloc.o [2]
+exit                    0x2000'e7fb     0x4  Code  Gb  exit.o [2]
+free                    0x2000'b0a5     0x4  Code  Gb  heaptramp0.o [2]
+frexp                   0x2000'cdf1          Code  Gb  frexp.o [5]
+frexpl                  0x2000'cdf1          Code  Gb  frexp.o [5]
+gFirstCmdMode           0x2001'209d     0x1  Data  Gb  driver.o [7]
+g_AudioControlTask      0x2001'20b0     0x4  Data  Gb  control.o [1]
+g_ControlMsgQueue       0x2001'20b4     0x4  Data  Gb  control.o [1]
+g_H2NCnysPattern        0x2000'71c0     0x8  Data  Gb  driver.o [7]
+g_H2NSyncPattern        0x2000'71b8     0x8  Data  Gb  driver.o [7]
+g_MicTask               0x2001'20d0     0x4  Data  Gb  main.o [1]
+g_NetworkTask           0x2001'20d4     0x4  Data  Gb  main.o [1]
+g_SpeakerTask           0x2001'20cc     0x4  Data  Gb  main.o [1]
+g_SpiFd                 0x2001'1f1c     0x4  Data  Gb  cc_pal.o [7]
+g_StatMem               0x2001'1bd8   0x178  Data  Gb  driver.o [7]
+g_UdpSock               0x2001'1fc8    0x2c  Data  Gb  main.o [1]
+g_cBsdBuf               0x2000'eb60  0x2800  Data  Lc  speaker.o [1]
+g_cDummy                0x2001'1f74     0x4  Data  Gb  cc_pal.o [7]
+g_iReceiveCount         0x2001'20f0     0x4  Data  Gb  speaker.o [1]
+g_iSentCount            0x2001'20d8     0x4  Data  Gb  microphone.o [1]
+g_loopback              0x2000'eb5c     0x1  Data  Gb  main.o [1]
+g_pAudioInControlHdl    0x2001'20a8     0x4  Data  Gb  control.o [1]
+g_pAudioOutControlHdl   0x2001'20ac     0x4  Data  Gb  control.o [1]
+g_pCB                   0x2001'20a0     0x4  Data  Gb  driver.o [7]
+g_pPlayBuffer           0x2001'20e8     0x4  Data  Gb  pcm_handler.o [1]
+g_pRecordBuffer         0x2001'20e4     0x4  Data  Gb  pcm_handler.o [1]
+g_pulDisRegs            0x2000'e960    0x18  Data  Lc  interrupt.o [3]
+g_pulEnRegs             0x2000'e948    0x18  Data  Lc  interrupt.o [3]
+g_pulRegs               0x2000'dfd4    0xd4  Data  Lc  interrupt.o [3]
+g_pulUnpendRegs         0x2000'e978    0x18  Data  Lc  interrupt.o [3]
+g_ucConnectionBSSID     0x2001'2094     0x8  Data  Gb  network.o [1]
+g_ucConnectionSSID      0x2001'1ff4    0x24  Data  Gb  network.o [1]
+g_ucDMAEnabled          0x2001'1f18     0x1  Data  Gb  cc_pal.o [7]
+g_ucDinDout             0x2001'1f20    0x50  Data  Gb  cc_pal.o [7]
+g_ucLED1Pin             0x2001'2153     0x1  Data  Gb  gpio_if.o [1]
+g_ucLED2Pin             0x2001'2154     0x1  Data  Gb  gpio_if.o [1]
+g_ucLED3Pin             0x2001'2155     0x1  Data  Gb  gpio_if.o [1]
+g_ucMicStartFlag        0x2001'2151     0x1  Data  Gb  control.o [1]
+g_ucSpkrStartFlag       0x2001'2152     0x1  Data  Gb  control.o [1]
+g_uiIpAddress           0x2001'20e0     0x4  Data  Gb  network.o [1]
+g_uiLED1Port            0x2001'20b8     0x4  Data  Gb  gpio_if.o [1]
+g_uiLED2Port            0x2001'20bc     0x4  Data  Gb  gpio_if.o [1]
+g_uiLED3Port            0x2001'20c0     0x4  Data  Gb  gpio_if.o [1]
+g_uiPlayWaterMark       0x2001'20ec     0x4  Data  Gb  pcm_handler.o [1]
+g_ulPinToPadMap         0x2000'dde8   0x100  Data  Lc  pin.o [3]
+g_ulSPIDmaMaskMap       0x2000'e990    0x18  Data  Lc  spi.o [3]
+g_ulStatus              0x2001'20dc     0x4  Data  Gb  network.o [1]
+gaucZeroBuffer          0x2001'1800   0x200  Data  Gb  pcm_handler.o [1]
+gfpAppCallbackHndl      0x2001'1d50   0x100  Data  Gb  udma_if.o [1]
+gpCtlTbl                0x2001'1400   0x400  Data  Gb  udma_if.o [1]
+iDone                   0x2001'2156     0x1  Data  Gb  udma_if.o [1]
+iic_rw_error_count      0x2001'20a4     0x4  Data  Gb  audiocodec.o [1]
+init_mparams            0x2000'441b    0x32  Code  Lc  dlmalloc.o [2]
+init_top                0x2000'444d    0x36  Code  Lc  dlmalloc.o [2]
+ldexp                   0x2000'cec1          Code  Gb  ldexp.o [5]
+ldexpl                  0x2000'cec1          Code  Gb  ldexp.o [5]
+mDNS_Task               0x2000'c6c9    0x44  Code  Gb  network.o [1]
+main                    0x2000'9655   0x218  Code  Gb  main.o [1]
+main::__FUNCTION__      0x2000'eb14     0x8  Data  Lc  main.o [1]
+memchr                  0x2000'cbf5          Code  Gb  memchr.o [6]
+mparams                 0x2001'2018    0x18  Data  Lc  dlmalloc.o [2]
+osi_InterruptDeRegister
+                        0x2000'7209    0x12  Code  Gb  osi_freertos.o [4]
+osi_InterruptRegister   0x2000'71e9    0x20  Code  Gb  osi_freertos.o [4]
+osi_LockObjCreate       0x2000'72df    0x24  Code  Gb  osi_freertos.o [4]
+osi_LockObjDelete       0x2000'732f     0xc  Code  Gb  osi_freertos.o [4]
+osi_LockObjLock         0x2000'733b    0x2a  Code  Gb  osi_freertos.o [4]
+osi_LockObjUnlock       0x2000'7365    0x26  Code  Gb  osi_freertos.o [4]
+osi_MsgQCreate          0x2000'742f    0x2c  Code  Gb  osi_freertos.o [4]
+osi_MsgQDelete          0x2000'745b    0x16  Code  Gb  osi_freertos.o [4]
+osi_MsgQRead            0x2000'74b1    0x2c  Code  Gb  osi_freertos.o [4]
+osi_MsgQWrite           0x2000'7471    0x28  Code  Gb  osi_freertos.o [4]
+osi_Sleep               0x2000'74e5     0xe  Code  Gb  osi_freertos.o [4]
+osi_Spawn               0x2000'738b    0x36  Code  Gb  osi_freertos.o [4]
+osi_SyncObjCreate       0x2000'721b    0x2a  Code  Gb  osi_freertos.o [4]
+osi_SyncObjDelete       0x2000'7245    0x16  Code  Gb  osi_freertos.o [4]
+osi_SyncObjSignal       0x2000'725b    0x24  Code  Gb  osi_freertos.o [4]
+osi_SyncObjSignalFromISR
+                        0x2000'727f    0x36  Code  Gb  osi_freertos.o [4]
+osi_SyncObjWait         0x2000'72b5    0x2a  Code  Gb  osi_freertos.o [4]
+osi_TaskCreate          0x2000'7303    0x2c  Code  Gb  osi_freertos.o [4]
+osi_start               0x2000'74dd     0x8  Code  Gb  osi_freertos.o [4]
+pPingCallBackFunc       0x2001'2140     0x4  Data  Gb  driver.o [7]
+pPlayBuffer             0x2001'20c8     0x4  Data  Gb  main.o [1]
+pRecordBuffer           0x2001'20c4     0x4  Data  Gb  main.o [1]
+pcInterruptPriorityRegisters
+                        0x2000'eb3c     0x4  Data  Lc  port.o [4]
+prepend_alloc           0x2000'4483   0x346  Code  Lc  dlmalloc.o [2]
+prvAddCurrentTaskToDelayedList
+                        0x2000'8ca1    0x3e  Code  Lc  tasks.o [4]
+prvAllocateTCBAndStack  0x2000'8cdf    0x46  Code  Lc  tasks.o [4]
+prvCheckTasksWaitingTermination
+                        0x2000'8c49    0x58  Code  Lc  tasks.o [4]
+prvCopyDataFromQueue    0x2000'81ff    0x2a  Code  Lc  queue.o [4]
+prvCopyDataToQueue      0x2000'8183    0x7c  Code  Lc  queue.o [4]
+prvDeleteTCB            0x2000'8d25    0x12  Code  Lc  tasks.o [4]
+prvIdleTask             0x2000'8b95     0xc  Code  Lc  tasks.o [4]
+prvInitialiseTCBVariables
+                        0x2000'8ba1    0x48  Code  Lc  tasks.o [4]
+prvInitialiseTaskLists  0x2000'8be9    0x54  Code  Lc  tasks.o [4]
+prvIsQueueEmpty         0x2000'82ab    0x1c  Code  Lc  queue.o [4]
+prvIsQueueFull          0x2000'82c7    0x1e  Code  Lc  queue.o [4]
+prvNotifyQueueSetContainer
+                        0x2000'8305    0x56  Code  Lc  queue.o [4]
+prvResetNextTaskUnblockTime
+                        0x2000'8d37    0x24  Code  Lc  tasks.o [4]
+prvTaskExitError        0x2000'8381    0x1a  Code  Lc  port.o [4]
+prvUnlockQueue          0x2000'8229    0x82  Code  Lc  queue.o [4]
+pulStack                0x2001'2158  0x1000  Data  Lc  startup_ewarm.o [1]
+pvPortMalloc            0x2000'9965    0x20  Code  Gb  heap_3.o [4]
+pxCurrentTCB            0x2001'2108     0x4  Data  Gb  tasks.o [4]
+pxDelayedTaskList       0x2001'210c     0x4  Data  Lc  tasks.o [4]
+pxOverflowDelayedTaskList
+                        0x2001'2110     0x4  Data  Lc  tasks.o [4]
+pxPortInitialiseStack   0x2000'8365    0x1c  Code  Gb  port.o [4]
+pxReadyTasksLists       0x2001'1e50    0xc8  Data  Lc  tasks.o [4]
+realloc                 0x2000'b0a9     0x4  Code  Gb  heaptramp0.o [2]
+scalbln                 0x2000'cec1          Code  Gb  ldexp.o [5]
+scalblnl                0x2000'cec1          Code  Gb  ldexp.o [5]
+scalbn                  0x2000'cec1          Code  Gb  ldexp.o [5]
+scalbnl                 0x2000'cec1          Code  Gb  ldexp.o [5]
+scale                   0x2000'bf7b    0x46  Code  Lc  xprintffull_nomb.o [2]
+sec_hand                0x2001'2148     0x4  Data  Lc  xfail_s.o [2]
+segment_holding         0x2000'4401    0x1a  Code  Lc  dlmalloc.o [2]
+sl_Bind                 0x2000'd44d    0x5e  Code  Gb  socket.o [7]
+sl_Close                0x2000'd43d    0x10  Code  Gb  socket.o [7]
+sl_Htonl                0x2000'd693    0x2e  Code  Gb  socket.o [7]
+sl_Htons                0x2000'd6c1    0x24  Code  Gb  socket.o [7]
+sl_NetAppMDNSRegisterService
+                        0x2000'b5c9    0x30  Code  Gb  netapp.o [7]
+sl_NetAppMDNSUnRegisterService
+                        0x2000'b645    0x5c  Code  Gb  netapp.o [7]
+sl_RecvFrom             0x2000'd577    0xb0  Code  Gb  socket.o [7]
+sl_SendTo               0x2000'd4ab    0xc6  Code  Gb  socket.o [7]
+sl_Socket               0x2000'd411    0x2c  Code  Gb  socket.o [7]
+sl_Start                0x2000'd955    0x8a  Code  Gb  device.o [7]
+sl_Stop                 0x2000'da81    0x8e  Code  Gb  device.o [7]
+sl_WlanConnect          0x2000'd785   0x1a0  Code  Gb  wlan.o [7]
+sl_WlanSetMode          0x2000'd92d     0xe  Code  Gb  wlan.o [7]
+spi_Close               0x2000'76a1    0x64  Code  Gb  cc_pal.o [7]
+spi_Open                0x2000'7595   0x10c  Code  Gb  cc_pal.o [7]
+spi_Read                0x2000'7705   0x126  Code  Gb  cc_pal.o [7]
+spi_Write               0x2000'782b    0xde  Code  Gb  cc_pal.o [7]
+strchr                  0x2000'cb65          Code  Gb  strchr.o [6]
+strlen                  0x2000'cbbd          Code  Gb  strlen.o [6]
+sys_alloc               0x2000'49c1   0x164  Code  Lc  dlmalloc.o [2]
+sys_trim                0x2000'4b25    0x64  Code  Lc  dlmalloc.o [2]
+tmalloc_large           0x2000'503b   0x386  Code  Lc  dlmalloc.o [2]
+tmalloc_small           0x2000'53c1   0x200  Code  Lc  dlmalloc.o [2]
+try_realloc_chunk       0x2000'5d7b   0x318  Code  Lc  dlmalloc.o [2]
+uDMAChannelAssign       0x2000'922d    0x2e  Code  Gb  udma.o [3]
+uDMAChannelAttributeDisable
+                        0x2000'9149    0x38  Code  Gb  udma.o [3]
+uDMAChannelAttributeEnable
+                        0x2000'9111    0x38  Code  Gb  udma.o [3]
+uDMAChannelControlSet   0x2000'9181    0x20  Code  Gb  udma.o [3]
+uDMAChannelEnable       0x2000'90f5    0x10  Code  Gb  udma.o [3]
+uDMAChannelTransferSet  0x2000'91a1    0x80  Code  Gb  udma.o [3]
+uDMAControlBaseGet      0x2000'910b     0x6  Code  Gb  udma.o [3]
+uDMAControlBaseSet      0x2000'9105     0x6  Code  Gb  udma.o [3]
+uDMAEnable              0x2000'90ed     0x8  Code  Gb  udma.o [3]
+uDMAIntClear            0x2000'9227     0x6  Code  Gb  udma.o [3]
+uDMAIntStatus           0x2000'9221     0x6  Code  Gb  udma.o [3]
+ucMaxSysCallPriority    0x2001'2157     0x1  Data  Lc  port.o [4]
+ulMaxPRIGROUPValue      0x2001'2104     0x4  Data  Lc  port.o [4]
+ulPortSetInterruptMask  0x2000'99db          Code  Gb  portasm.o [4]
+ulReg                   0x2000'eb40    0x14  Data  Lc  gpio_if.o [1]
+uxCriticalNesting       0x2000'eb54     0x4  Data  Lc  port.o [4]
+uxCurrentNumberOfTasks  0x2001'211c     0x4  Data  Lc  tasks.o [4]
+uxListRemove            0x2000'993f    0x26  Code  Gb  list.o [4]
+uxPendedTicks           0x2001'212c     0x4  Data  Lc  tasks.o [4]
+uxSchedulerSuspended    0x2001'213c     0x4  Data  Lc  tasks.o [4]
+uxTaskNumber            0x2001'2138     0x4  Data  Lc  tasks.o [4]
+uxTasksDeleted          0x2001'2114     0x4  Data  Lc  tasks.o [4]
+uxTopReadyPriority      0x2001'2124     0x4  Data  Lc  tasks.o [4]
+vApplicationIdleHook    0x2000'9637     0x2  Code  Gb  main.o [1]
+vApplicationMallocFailedHook
+                        0x2000'963b     0x2  Code  Gb  main.o [1]
+vApplicationStackOverflowHook
+                        0x2000'9639     0x2  Code  Gb  main.o [1]
+vAssertCalled           0x2000'9635     0x2  Code  Gb  main.o [1]
+vListInitialise         0x2000'98cd    0x1e  Code  Gb  list.o [4]
+vListInitialiseItem     0x2000'98eb     0x6  Code  Gb  list.o [4]
+vListInsert             0x2000'9909    0x36  Code  Gb  list.o [4]
+vListInsertEnd          0x2000'98f1    0x18  Code  Gb  list.o [4]
+vPortClearInterruptMask
+                        0x2000'99e9          Code  Gb  portasm.o [4]
+vPortEnterCritical      0x2000'8435    0x1a  Code  Gb  port.o [4]
+vPortExitCritical       0x2000'844f    0x2e  Code  Gb  port.o [4]
+vPortFree               0x2000'9985    0x18  Code  Gb  heap_3.o [4]
+vPortSVCHandler         0x2000'99ef          Code  Gb  portasm.o [4]
+vPortStartFirstTask     0x2000'9a0f          Code  Gb  portasm.o [4]
+vPortValidateInterruptPriority
+                        0x2000'84a9    0x40  Code  Gb  port.o [4]
+vPortYield              0x2000'8423    0x12  Code  Gb  port.o [4]
+vQueueDelete            0x2000'8157    0x2c  Code  Gb  queue.o [4]
+vQueueUnregisterQueue   0x2000'82e5    0x20  Code  Gb  queue.o [4]
+vSimpleLinkSpawnTask    0x2000'73c1    0x22  Code  Lc  osi_freertos.o [4]
+vTaskDelay              0x2000'8675    0x6e  Code  Gb  tasks.o [4]
+vTaskMissedYield        0x2000'8b8b     0xa  Code  Gb  tasks.o [4]
+vTaskPlaceOnEventList   0x2000'89df    0x6a  Code  Gb  tasks.o [4]
+vTaskPriorityDisinherit
+                        0x2000'8e11    0x6e  Code  Gb  tasks.o [4]
+vTaskPriorityInherit    0x2000'8d7d    0x94  Code  Gb  tasks.o [4]
+vTaskSetTimeOutState    0x2000'8ae1    0x26  Code  Gb  tasks.o [4]
+vTaskStartScheduler     0x2000'86e3    0x58  Code  Gb  tasks.o [4]
+vTaskSuspendAll         0x2000'873b    0x10  Code  Gb  tasks.o [4]
+vTaskSwitchContext      0x2000'894d    0x92  Code  Gb  tasks.o [4]
+val                     0x2001'214c     0x2  Data  Lc  audiocodec.o [1]
+vsnprintf               0x2000'b309    0x3c  Code  Gb  vsnprint.o [2]
+xDelayedTaskList1       0x2001'2030    0x14  Data  Lc  tasks.o [4]
+xDelayedTaskList2       0x2001'2044    0x14  Data  Lc  tasks.o [4]
+xHigherPriorityTaskWoken
+                        0x2001'20f8     0x4  Data  Gb  osi_freertos.o [4]
+xIdleTaskHandle         0x2001'2118     0x4  Data  Lc  tasks.o [4]
+xNextTaskUnblockTime    0x2000'eb58     0x4  Data  Lc  tasks.o [4]
+xNumOfOverflows         0x2001'2134     0x4  Data  Lc  tasks.o [4]
+xPendingReadyList       0x2001'2058    0x14  Data  Lc  tasks.o [4]
+xPortPendSVHandler      0x2000'999d          Code  Gb  portasm.o [4]
+xPortStartScheduler     0x2000'839b    0x88  Code  Gb  port.o [4]
+xPortSysTickHandler     0x2000'847d    0x1e  Code  Gb  port.o [4]
+xQueueCreateMutex       0x2000'7d43    0x70  Code  Gb  queue.o [4]
+xQueueGenericCreate     0x2000'7cdd    0x66  Code  Gb  queue.o [4]
+xQueueGenericReceive    0x2000'7fef   0x168  Code  Gb  queue.o [4]
+xQueueGenericReset      0x2000'7c61    0x7c  Code  Gb  queue.o [4]
+xQueueGenericSend       0x2000'7db3   0x164  Code  Gb  queue.o [4]
+xQueueGenericSendFromISR
+                        0x2000'7f17    0xd8  Code  Gb  queue.o [4]
+xQueueRegistry          0x2001'1f78    0x50  Data  Gb  queue.o [4]
+xSchedulerRunning       0x2001'2128     0x4  Data  Lc  tasks.o [4]
+xSimpleLinkSpawnQueue   0x2001'20fc     0x4  Data  Gb  osi_freertos.o [4]
+xSimpleLinkSpawnTaskHndl
+                        0x2001'2100     0x4  Data  Gb  osi_freertos.o [4]
+xSuspendedTaskList      0x2001'2080    0x14  Data  Lc  tasks.o [4]
+xTaskCheckForTimeOut    0x2000'8b11    0x7a  Code  Gb  tasks.o [4]
+xTaskGenericCreate      0x2000'8519   0x15c  Code  Gb  tasks.o [4]
+xTaskGetCurrentTaskHandle
+                        0x2000'8d5b     0x6  Code  Gb  tasks.o [4]
+xTaskGetSchedulerState  0x2000'8d61    0x1c  Code  Gb  tasks.o [4]
+xTaskIncrementTick      0x2000'8835   0x118  Code  Gb  tasks.o [4]
+xTaskRemoveFromEventList
+                        0x2000'8a61    0x7c  Code  Gb  tasks.o [4]
+xTaskResumeAll          0x2000'874b    0xea  Code  Gb  tasks.o [4]
+xTasksWaitingTermination
+                        0x2001'206c    0x14  Data  Lc  tasks.o [4]
+xTickCount              0x2001'2120     0x4  Data  Lc  tasks.o [4]
+xYieldPending           0x2001'2130     0x4  Data  Lc  tasks.o [4]
+
+
+[1] = C:\ti\CC3200SDK_1.1.0\cc3200-sdk\example\wifi_audio_app-Amomcu-v1.0-20170301\ewarm\UniCast\Obj
+[2] = dl7M_tln.a
+[3] = driverlib.a
+[4] = free_rtos.a
+[5] = m7M_tl.a
+[6] = rt7M_tl.a
+[7] = simplelink.a
+
+   39 796 bytes of readonly  code memory
+    4 044 bytes of readonly  data memory
+  116 245 bytes of readwrite data memory
+
+Errors: none
+Warnings: 1
